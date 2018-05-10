@@ -9,14 +9,12 @@ import static org.junit.Assert.assertEquals;
 import junitparams.FileParameters;
 import junitparams.JUnitParamsRunner;
 
-import junitparams.Parameters;
-
 @RunWith(JUnitParamsRunner.class)
 public class AppTestParam2 {
 
 
 	@Test
-	@FileParameters("./listaparametros.cvs")
+	@FileParameters("listaex01.csv")
 		public void testSomar(int a,int b,int r) {
 			assertEquals(App.somar(a, b),r);
 	}
